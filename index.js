@@ -1,12 +1,4 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import Header from "./Header";
+import MovieList from "./MovieList";
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
+export { Header, MovieList };
