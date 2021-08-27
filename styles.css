@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header-container {
+  border-bottom: 1px solid #000;
+}
+.header-logo {
+  text-transform: uppercase;
+  max-width: 100px;
+  color: rgb(9, 16, 37);
+}
+.header-search-wrapper {
+
+ display: flex; 
+  align-items: center;
+
+}
+
+/* List of the Movies */
+
+.movieApp .row {
+ 
+  flex-wrap: nowrap;
+}
+
+.movieApp ::-webkit-scrollbar {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
