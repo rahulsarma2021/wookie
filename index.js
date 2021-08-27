@@ -1,28 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const MovieList = ({ data, genre }) => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-  
-    setMovies(data);
-  }, [data]);
-
+const Header = () => {
   return (
-    <React.Fragment>
-      <h1>{genre}</h1>
-      <div className="row mb-3">
-        {}
-        {Object.keys(movies).map((key) => (
-          <div className="image-container d-flex justify-content-start m-3 w-auto slide-in-down">
-            <img src={movies[key].poster} alt="movie" height="200px" />
-            <div className="overlay d-flex align-items-center justify-content-center"></div>
-          </div>
-        ))}
+    <div className="header-container row d-flex align-items-center mt-5 mb-5">
+      <div className="col">
+        <h1 className="header-logo">Wookie Movies</h1>
       </div>
-    </React.Fragment>
+      
+      <div className="col col-sm-4">
+     
+        <div class="form-outline">
+    <input type="search" placeholder="Type here "  id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+     </div>
+      </div>
+    </div>
   );
 };
 
-export default MovieList;
-
+export default Header;
